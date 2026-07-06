@@ -1,0 +1,58 @@
+[
+  {
+    "time": "19:12:50.692",
+    "severity": "CRITICAL",
+    "rule": "Port Scan Detected",
+    "src": "10.0.0.99",
+    "dst": "multiple",
+    "detail": "15 unique ports probed in 10s (last: :34)"
+  },
+  {
+    "time": "19:12:50.695",
+    "severity": "HIGH",
+    "rule": "Brute-Force Attempt",
+    "src": "45.33.32.156",
+    "dst": ":22",
+    "detail": "10 connection attempts to SSH in 5s"
+  },
+  {
+    "time": "19:12:50.709",
+    "severity": "HIGH",
+    "rule": "ICMP Flood / Ping Flood",
+    "src": "172.16.0.50",
+    "dst": "broadcast/target",
+    "detail": "30 ICMP packets in 5s"
+  },
+  {
+    "time": "19:12:50.711",
+    "severity": "HIGH",
+    "rule": "NULL Scan",
+    "src": "10.0.0.77",
+    "dst": ":80",
+    "detail": "TCP packet with NO flags set \u2013 likely NULL scan (nmap -sN)"
+  },
+  {
+    "time": "19:12:50.712",
+    "severity": "HIGH",
+    "rule": "XMAS Scan",
+    "src": "10.0.0.77",
+    "dst": ":443",
+    "detail": "FIN+PSH+URG set \u2013 likely XMAS scan (nmap -sX)"
+  },
+  {
+    "time": "19:12:50.713",
+    "severity": "CRITICAL",
+    "rule": "ARP Spoofing / Poisoning",
+    "src": "192.168.1.1",
+    "dst": "LAN",
+    "detail": "IP 192.168.1.1 changed MAC: aa:bb:cc:dd:ee:ff \u2192 11:22:33:44:55:66"
+  },
+  {
+    "time": "19:12:50.714",
+    "severity": "MEDIUM",
+    "rule": "Possible DNS Exfiltration",
+    "src": "192.168.1.20",
+    "dst": "DNS",
+    "detail": "Unusually long subdomain (70 chars): AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA..."
+  }
+]
